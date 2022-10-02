@@ -1,25 +1,32 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import {BrowserRouter,Routes,Route} from 'react-router-dom';
-import Aboutus from './Aboutus';
-import Dashboard from './Dashboard';
-import Sourabh from './Sourabh';
-import Comment from './Comment'
 import SingleComment from './SingleComment';
- const Apple= function(){
+import propic1 from "./images/profilepic1.jpg"
+import propic2 from "./images/profilepic2.jpg"
+import propic3 from "./images/profilepic3.jpg"
+ const App= function(){
     return (
-        <div>
-            <BrowserRouter>
-                <Routes>
-                <Route path ='/' element={<Sourabh/>   }/>
-                <Route path ='/Dashboard' element={<Dashboard/>   }/>
-                <Route path ='/Sourabh' element={<Sourabh/>   }/>
-                <Route path ='/Aboutus' element={<Aboutus/>   }/>
-                <Route path ='/Quit' element={<Sourabh/>   }/>
-                <Route path ='/Comment' element={<Comment/>   }/>
-                </Routes>
-            </BrowserRouter> 
-        </div>
+        <div className='ui comments'>
+            <SingleComment 
+             name="Babloo" 
+             date="Today at 5:00PM"
+             text="Happy New year"
+             picture={propic1}/>
+            <SingleComment 
+             name="Sourabh" 
+             date="Today at 6:00PM"
+             text="Happy Pongal"
+             picture={propic2}/>
+            <SingleComment 
+             name="Sai" 
+             date="Today at 7:00PM"
+             text="Happy Christmas"
+             picture={propic3}/>
+             
+
+
+             
+               </div>
 
     )
  }
@@ -30,7 +37,7 @@ import SingleComment from './SingleComment';
 
 
  ReactDOM.render(
-    <Apple />,
+    <App />,
     document.querySelector('#root')
     
  )   
