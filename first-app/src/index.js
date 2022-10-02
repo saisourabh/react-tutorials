@@ -1,23 +1,25 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-
- const App= function(){
-    return (
-        <div>Hi Thereh!</div>
-    )
- }
+import {BrowserRouter,Routes,Route} from 'react-router-dom';
+import Aboutus from './Aboutus';
+import Dashboard from './Dashboard';
+import Sourabh from './Sourabh';
+import Comment from './Comment'
  const Apple= function(){
     return (
-        <div>There Hi
-          <ul>
-            <li>Vasamsetti</li>
-            <li>Veera</li>
-            <li>Venkata</li>
-            <li>Lakshmi</li>
-            <li>Sai</li>
-            <li>Sourabh</li>
-          </ul>
+        <div>
+            <BrowserRouter>
+                <Routes>
+                <Route path ='/' element={<Sourabh/>   }/>
+                <Route path ='/Dashboard' element={<Dashboard/>   }/>
+                <Route path ='/Sourabh' element={<Sourabh/>   }/>
+                <Route path ='/Aboutus' element={<Aboutus/>   }/>
+                <Route path ='/Quit' element={<Sourabh/>   }/>
+                <Route path ='/Comment' element={<Comment/>   }/>
+                </Routes>
+            </BrowserRouter>
         </div>
+
     )
  }
 // Babel Converted
@@ -25,10 +27,7 @@ import ReactDOM from 'react-dom';
 //     return /*#__PURE__*/React.createElement("div", null, "There Hi", /*#__PURE__*/React.createElement("ul", null, /*#__PURE__*/React.createElement("li", null, "Vasamsettio"), /*#__PURE__*/React.createElement("li", null, "Veera"), /*#__PURE__*/React.createElement("li", null, "Venkata"), /*#__PURE__*/React.createElement("li", null, "Lakshmi"), /*#__PURE__*/React.createElement("li", null, "Sai"), /*#__PURE__*/React.createElement("li", null, "Sourabh")));
 //   };
 
- ReactDOM.render(
-    <App />,
-    document.querySelector('#root')
- )
+
  ReactDOM.render(
     <Apple />,
     document.querySelector('#root')
