@@ -1,17 +1,15 @@
 import React from 'react';
 //import Link from 'react-router-dom'
+ import profilepic1 from './images/profilepic3.jpg'
+import SingleComment from './SingleComment';
 const Sourabh =()=>{
     return (
-        <div>
-            <a href="/" className="author">
-                        Sourabh
-                    </a>
-                    <div className="metadata">
-                        <span className="date">
-                            Today at 5:00PM
-                        </span>
-                    </div>
-        </div>
+
+
+       
+            <div>
+                <SingleComment />
+            </div>
     )
 }
-export default Sourabh
+export default Sourabh;

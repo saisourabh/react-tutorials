@@ -1,17 +1,18 @@
 import React from "react";
+import { Simulate } from "react-dom/test-utils";
 import profilepic1 from "./images/profilepic1.jpg"
 import profilepic2 from "./images/profilepic2.jpg"
 import profilepic3 from "./images/profilepic3.jpg"
-import Sourabh from "./Sourabh";
+import SingleComment from "./SingleComment";
+//import Sourabh from "./Sourabh";
 const Comment = () =>
 {
     return(
         <div className="ui comments">
 
-            <Sourabh />
-            <div className="comment">
+            {/* <div className="comment">
                 <a href="/" className="avatar">
-                    <img src={profilepic1} alt='profile picture' />
+                    <img src={profilepic1} alt='' />
                 </a>
                 <div className="content">
                     <a href="/" className="author">
@@ -30,7 +31,7 @@ const Comment = () =>
 
             <div className="comment">
                 <a href="/" className="avatar">
-                    <img src={profilepic2} alt='profile picture' />
+                    <img src={profilepic2} alt='' />
                 </a>
                 <div className="content">
                     <a href="/" className="author">
@@ -49,7 +50,7 @@ const Comment = () =>
 
             <div className="comment">
                 <a href="/" className="avatar">
-                    <img src={profilepic3} alt='profile picture' />
+                    <img src={profilepic3} alt='' />
                 </a>
                 <div className="content">
                     <a href="/" className="author">
@@ -64,10 +65,11 @@ const Comment = () =>
                         it's amazing
                     </div>
                 </div>
-            </div>
+            </div> */}hi 
+            <SingleComment />
         </div>
 
     )
 }
 
-export default Comment
+export default Comment;

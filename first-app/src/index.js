@@ -5,6 +5,7 @@ import Aboutus from './Aboutus';
 import Dashboard from './Dashboard';
 import Sourabh from './Sourabh';
 import Comment from './Comment'
+import SingleComment from './SingleComment';
  const Apple= function(){
     return (
         <div>
@@ -17,7 +18,7 @@ import Comment from './Comment'
                 <Route path ='/Quit' element={<Sourabh/>   }/>
                 <Route path ='/Comment' element={<Comment/>   }/>
                 </Routes>
-            </BrowserRouter>
+            </BrowserRouter> 
         </div>
 
     )
